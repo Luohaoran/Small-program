@@ -1,0 +1,182 @@
+/* pages/scar/scar.wxss */
+
+/* 头文字 */
+
+.cheche {
+  text-align: center;
+}
+
+/* 复选框 */
+
+/*  重写 checkbox 样式  */
+
+/* 未选中的 背景样式 */
+
+checkbox .wx-checkbox-input {
+  border-radius: 50%; /* 圆角 */
+  width: 40rpx; /* 背景的宽 */
+  height: 40rpx; /* 背景的高 */
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: none;
+  background: rgb(255, 112, 1);
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  border-radius: 50%; /* 圆角 */
+  width: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 30rpx; /* 对勾大小 30rpx */
+  color: #fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+/* 计数器 */
+
+/*主容器*/
+
+.stepper {
+  width: 80px;
+  height: 26px;
+  /*给主容器设一个边框*//* border: 1px solid #ccc; */
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}
+
+/*加号和减号*/
+
+.stepper text {
+  width: 19px;
+  line-height: 26px;
+  text-align: center;
+  float: left;
+  background: rgb(241, 241, 241);
+  color: rgb(135, 135, 135);
+}
+
+/*数值*/
+
+.stepper input {
+  width: 40px;
+  height: 26px;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  /*给中间的input设置左右边框即可*//* border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc; */
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: black;
+}
+
+/*  */
+
+.bigbox {
+  width: 100%;
+  height: 200rpx;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one {
+  width: 10%;
+  height: 100%;
+  /* outline: 1px solid black; */
+  line-height: 180rpx;
+  text-align: center;
+}
+
+.two {
+  width: 60%;
+  height: 100%;
+  /* outline: 1px solid black; */
+  overflow: hidden;
+  display: flex;
+  /* line-height: 180rpx; *//* align-items: center; */
+}
+
+.two-img {
+  width: 40%;
+  height: 70%;
+  margin: 20rpx 20rpx 0rpx 10rpx;
+  /* outline: 1px solid black; */
+}
+
+.two-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.three {
+  width: 30%;
+  height: 100%;
+  /* outline: 1px solid black; */
+  display: flex;
+  align-items: flex-end;
+}
+
+.wenzi {
+  margin-top: 40rpx;
+}
+
+.wenzi view {
+  font-size: 30rpx;
+}
+
+/* 底部菜单设置 */
+
+.dibu {
+  width: 100%;
+  height: 100rpx;
+  /* outline: 1px solid black; */
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.dibu view {
+  padding-top: 20rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  /* outline: 1px solid black; */
+}
+
+.ones {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.twos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 30%;
+}
+
+.threes {
+  width: 30%;
+  background-color: rgb(255, 113, 1);
+  color: white;
+  text-align: center;
+  line-height: 60rpx;
+}
+

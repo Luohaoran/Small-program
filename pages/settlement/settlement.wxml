@@ -1,0 +1,23 @@
+<!--pages/settlement/settlement.wxml-->
+<!-- 页头备注 -->
+<view class='yetou'>
+  <view>备注:</view>
+  <textarea maxlength='20' auto-focus='ture' class='text'></textarea>
+</view>
+
+<!-- 优惠 -->
+<view class='youhui'>
+  <view class='you'>优惠方式：</view>
+  <view class='right'>></view>
+</view>
+
+<!-- 手机号码 -->
+<view class='phone'>
+<view>手机号码（必填）：</view>
+<textarea maxlength='20' auto-focus='ture' class='text1' value='19009012345'></textarea>
+</view>
+
+<!-- 确认支付 -->
+<view class='pay'>
+<button bindtap='pay'>确认支付 ¥{{price}}</button>
+</view>

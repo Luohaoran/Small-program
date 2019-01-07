@@ -1,0 +1,31 @@
+<!--pages/may/may.wxml-->
+
+<!-- 用户信息 -->
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+
+<!-- 待付款 -->
+<view class='two'>
+  <block wx:for='{{two}}'>
+    <view class='img' bindtap='url'>
+      <image src='{{item.src}}' mode='aspectFit'></image>
+      <view>{{item.title}}</view>
+    </view>
+  </block>
+</view>
+
+<!-- 会员卡 -->
+<view class='three'>
+<block  wx:for='{{three}}'>
+ <view class='three-img'>
+    <image src='{{item.src}}'></image>
+    <view>{{item.title}}</view>
+  </view>
+</block>
+ 
+</view>

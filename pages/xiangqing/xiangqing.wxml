@@ -1,0 +1,28 @@
+<!-- pages/xiangqing/xiangqing.wxml-->
+<view class='first'>
+  <block wx:for='{{data}}' wx:key='data'>
+    <view class="{{index==idx?'a':'b'}}" data-index='{{index}}' bindtap='goIndex'>{{item.title}}</view>
+  </block>
+</view>
+
+
+<view>
+  <block wx:for='{{data}}' wx:key='data'>
+    <view class="{{index==idx?'c':'d'}} xiangqing" data-index='{{index}}'>
+      <view class='big'>
+        <view class='two-img'>
+          <image src='{{src}}' mode='aspectFit'></image>
+        </view>
+        <!-- 文字描述 -->
+        <view class='wenzi'>
+          <view>{{title}}</view>
+          <view>{{time}}</view>
+          <view>价格 ¥{{price}}</view>
+        </view>
+        <view class='chakan'>
+        <view>查看</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

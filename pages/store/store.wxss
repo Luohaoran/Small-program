@@ -1,0 +1,172 @@
+/* pages/store/store.wxss */
+
+page {
+  background-color: rgba(229, 229, 229, 0.2);
+}
+
+.swiper {
+  margin: 0 auto;
+  width: 95%;
+  margin-bottom: 5px;
+  /* border: 1px solid black; */
+}
+
+/* 轮播图片格式社设置 */
+
+.slide-image {
+  width: 100%;
+}
+
+/* 奶茶店 */
+
+.milk {
+  background-color: white;
+  margin: 0 auto;
+  width: 95%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3px rgba(209, 209, 209, 0.8);
+  margin-bottom: 10px;
+  border-radius: 5rpx;
+}
+
+.milk view {
+  margin: 0 10px;
+}
+
+.milkImg {
+  /* border: 1px solid red; */
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.milkImg image {
+  width: 40px;
+  height: 40px;
+}
+
+/* 文字 */
+
+.naicha {
+  font-size: 16px;
+}
+
+.dizhi {
+  font-size: 12px;
+  color: #cdc9c9;
+}
+
+/* 电话 */
+
+.phone {
+  width: 30px;
+  height: 30px;
+}
+
+.phone image {
+  width: 30px;
+  height: 30px;
+}
+
+/* 营业时间 */
+
+.time {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  height: 130rpx;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10rpx 0rpx 10rxp 0rpx;
+  border-radius: 5rpx;
+}
+
+.time view {
+  width: 100%;
+  padding-left: 30rpx;
+}
+
+.time view:nth-child(1) {
+  font-size: 34rpx;
+  border-left: 6px solid rgb(255, 153, 0);
+  margin-bottom: 10rpx;
+}
+
+.time view:nth-child(2) {
+  font-size: 24rpx;
+  border-left: 6px solid rgba(0, 0, 0, 0);
+}
+
+/* 门店服务 */
+
+.time1 {
+  /* display: flex; *//* align-items: center; */
+  width: 95%;
+  height: 350rpx;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10rpx 0rpx 10rxp 0rpx;
+  border-radius: 5rpx;
+}
+
+.fuwu {
+  padding-left: 30rpx;
+  font-size: 34rpx;
+  border-left: 6px solid rgb(255, 153, 0);
+  margin-bottom: 10rpx;
+}
+
+.big {
+  width: 100%;
+  height: 300rpx;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+.wifi {
+  width: 20%;
+  position: relative;
+}
+
+.wifi-img {
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  display: flex;
+}
+
+.wifi-img image {
+  width: 160%;
+  height: 100%;
+}
+
+.wifi view:nth-child(2) {
+  font-size: 16rpx;
+  position: absolute;
+  left: 24rpx;
+  bottom: 40rpx;
+}
+
+/* 地图 */
+.map{
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+}
+.daohang{
+ padding-left: 30rpx;
+  font-size: 34rpx;
+  border-left: 6px solid rgb(255, 153, 0);
+  margin-bottom: 10rpx;
+}

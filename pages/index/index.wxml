@@ -1,0 +1,118 @@
+<!--pages/index/index.wxml-->
+<!-- 轮播 -->
+<view class='swiper'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots='true' indicator-active-color="{{afterColor}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 通知栏 -->
+<view class='notice'>
+  <image src="../../images/notice.png"></image>
+  <text>第二杯半价哦！！！</text>
+</view>
+<!--  你的专属奶茶店 -->
+<view class='milk'>
+  <!--1 图标 -->
+  <view class='milkImg'>
+    <image src='../../images/milk.jpeg'></image>
+  </view>
+  <!--2 文字 -->
+  <view>
+    <view>
+      <text class='naicha'>你的专属奶茶店</text>
+    </view>
+    <view>
+      <text class='dizhi'>深圳市南山区软件基地芒果网大厦</text>
+    </view>
+  </view>
+  <!--3 电话 -->
+  <view class='phone' bindtap='callphone'>
+    <image src='../../images/phone.png'></image>
+  </view>
+</view>
+
+<!-- 我要买单 -->
+<view class='maidan'>
+  <block wx:for='{{CheckSrc}}'>
+    <view class='content-item'>
+      <image src='{{item.src}}' mode='aspectFit'></image>
+      <view class='title'>
+        {{item.title}}
+      </view>
+    </view>
+  </block>
+</view>
+
+<!-- 店主推荐 -->
+
+<view class='recommend'>
+  <!-- 左边 -->
+  <view class='dianzhu'>
+    <view class='dianzhuimg'>
+      <image src='../../images/dianzhutuijian.png'></image>
+    </view>
+    <view class='dianzhu-wenzi'>
+      <view>店主推荐</view>
+      <view>精选香醇好奶盖</view>
+    </view>
+  </view>
+  <!-- 右边 -->
+  <view class='right'>
+    <view class='right-dian'>
+      <view class='bj'>
+        <image src='../../images/zise.png'></image>
+      </view>
+      <view class='beizi'>
+        <image src='../../images/beizi.png' mode='aspectFit'></image>
+      </view>
+      <view class='dian-wenzi'>
+        <view>店内点单</view>
+        <view>畅想更多优惠</view>
+      </view>
+    </view>
+    <view class='right-wai'>
+      <view class='bj'>
+        <image src='../../images/lvse.png'></image>
+      </view>
+      <view class='wai-beizi beizi'>
+        <image src='../../images/beizi.png' mode='aspectFit'></image>
+      </view>
+      <view class='wai-wenzi'>
+        <view>外卖速达</view>
+        <view>上门更方便</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 今日热销 -->
+
+<view class='today'>
+  <view class='fire'>
+    <image src='../../images/fire.png' mode='aspectFit'></image>
+  </view>
+  <view class='wenben'>
+    <view>今日热销</view>
+    <view class='hr'></view>
+    <view>Hot Sale today</view>
+  </view>
+</view>
+
+<!-- 商品页面 -->
+
+<view class='commodity'>
+  <block wx:for='{{commodity}}' wx:for-index="index">
+    <view class='box'>
+      <view class='imgbox'>
+        <image src='{{item.src}}' mode='aspectFit'></image>
+      </view>
+      <view>{{item.title}}</view>
+      <view class='price'>{{item.price}}</view>
+      <button class='mai' bindtap='goumai' data-index='{{index}}' data-src='{{item.src}}' data-title='{{item.title}}' data-price='{{item.price}}'>购买</button>
+    </view>
+  </block>
+</view>

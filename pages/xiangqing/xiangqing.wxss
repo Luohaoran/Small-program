@@ -1,0 +1,102 @@
+/* pages/xiangqing/xiangqing.wxss */
+
+page {
+  background-color: rgba(229, 229, 229, 0.2);
+}
+
+.first {
+  width: 100%;
+  background: white;
+  height: 100rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first view {
+  height: 100%;
+  line-height: 100rpx;
+  width: 14%;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.a {
+  color: rgb(255, 153, 0);
+  border-bottom: 2px solid rgb(255, 153, 0);
+}
+
+.b {
+  color: black;
+  border: none;
+}
+
+.c {
+  /* color: green; */
+}
+
+.d {
+  display: none;
+}
+
+.xiangqing {
+  width: 100%;
+  height: 500rpx;
+  /* border: 1px solid black; */
+  /* background: white; */
+}
+
+.big {
+  margin-top: 10rpx;
+  background: white;
+  width: 100%;
+  height: 200rpx;
+  /* outline: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.two-img {
+  /* outline: 1px solid red; */
+  height: 100%;
+  width: 30%;
+  overflow: hidden;
+}
+
+.wenzi{
+  /* outline: 1px solid red; */
+  height: 100%;
+  width: 55%;
+}
+.chakan{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.chakan>view{
+  width: 100%;
+  text-align: center;
+  outline: 1px solid rgba(0, 0, 0,0.5);
+  margin-right: 10rpx;
+  border-radius: 5rpx;
+
+}
+.two-img image{
+  width: 100%;
+  height: 100%;
+}
+.wenzi>view{
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  font-size: 26rpx;
+}
+.wenzi>view:nth-child(1){
+  margin-top: 30rpx;
+  font-size: 36rpx;
+  /* margin-left: 30rpx; */
+}

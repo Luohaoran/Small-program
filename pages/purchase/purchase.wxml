@@ -1,0 +1,37 @@
+<!--pages/purchase/purchase.wxml-->
+<view class='top'>
+  <image src='{{src}}'></image>
+</view>
+<!-- 选择 -->
+<view class='xuanze'>
+  <view>{{title}}</view>
+  <view class='small'> {{title}}</view>
+  <view class='hr'></view>
+  <view class='jishu'>
+    <view class='price'>¥{{price*num}}</view>
+    <view class="stepper">
+      <!-- 减号 -->
+      <text class=" jian" bindtap="bindMinus">-</text>
+      <!-- 数值 -->
+      <input type="number" class='zhi' bindchange="bindManual" value="{{num}}" />
+      <!-- 加号 -->
+      <text class="normal jia" bindtap="bindPlus">+</text>
+    </view>
+  </view>
+  <view class='time'>出售时间 :00:00-23:29</view>
+</view>
+
+<!-- 底部界面 -->
+<view class='dibu'>
+  <!-- 图标 -->
+  <view class='tubiao' bindtap='car' data-src='{{src}}' data-title='{{title}}' data-price='{{price}}'>
+    <image src='../../images/car.png'></image>
+    <view class='shuzhi'>{{num}}</view>
+    <view class='jiage'>¥{{price*num}}</view>
+  </view>
+  <!-- 选好了 -->
+  <view class='xuan' bindtap='pay'>
+    选好了
+  </view>
+
+</view>

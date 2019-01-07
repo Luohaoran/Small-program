@@ -1,0 +1,53 @@
+<!--pages/scar/scar.wxml-->
+<!-- 页头文字 -->
+<view class='cheche'>购物车</view>
+
+<!-- 商品预览 -->
+<view class='bigbox'>
+  <!-- 单选框 -->
+  <view class='one'>
+    <checkbox bindtap="checkboxChange" data-checked="{{isChecked}}" checked='{{isChecked}}'></checkbox>
+  </view>
+  <!-- 商品预览 -->
+  <view class='two'>
+    <!-- 图片 -->
+    <view class='two-img'>
+      <image src='{{src}}' mode='aspectFit'></image>
+    </view>
+    <!-- 文字描述 -->
+    <view class='wenzi'>
+      <view>{{title}}</view>
+      <view>价格 ¥{{price}}</view>
+    </view>
+  </view>
+  <!-- 计数器 -->
+  <view class='three'>
+    <!-- 主容器 -->
+    <view class="stepper">
+      <!-- 减号 -->
+      <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+      <!-- 数值 -->
+      <input type="number" bindchange="bindManual" value="{{num}}" />
+      <!-- 加号 -->
+      <text class="normal" bindtap="bindPlus">+</text>
+    </view>
+  </view>
+</view>
+
+<!-- 底部菜单 -->
+<view class='dibu'>
+  <view class='ones'>
+    <view>
+      <checkbox bindtap="checkboxChange" data-checked="{{isChecked}}" checked='{{isChecked}}'></checkbox>
+    </view>
+    <view>全选</view>
+  </view>
+  <view class='twos'>
+
+    <view>合计:</view>
+    <view wx:if="{{isChecked==true}}">¥{{price*num}}</view>
+  </view>
+  <view class='threes' bindtap='pay'>
+    结算
+  </view>
+</view>

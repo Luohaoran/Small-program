@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/settlement/settlement",
+    "pages/xiangqing/xiangqing",
+    "pages/may/may",
+    "pages/scar/scar",
+    "pages/purchase/purchase",
+    "pages/store/store"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#ff9900",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index1.png"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "门店",
+        "iconPath": "images/icon/store.png",
+        "selectedIconPath": "images/icon/store1.png"
+      },
+      {
+        "pagePath": "pages/may/may",
+        "text": "我的",
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my1.png"
+      }
+    ]
+  }
+}
